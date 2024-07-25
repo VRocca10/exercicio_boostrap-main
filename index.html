@@ -33,7 +33,8 @@
         .carousel {
             overflow: hidden;
             padding-bottom: 5em;
-            max-height: 400px;
+            max-height: 800px;
+            margin-bottom: 3em;
         }
 
         .carousel img {
@@ -41,7 +42,7 @@
         }
 
         .carousel .carousel-inner {
-            max-height: 400px;
+            max-height: 800px;
         }
     </style>
 
@@ -77,63 +78,33 @@
 <main>
 
     <body>
-        <div class="container">
-            <section id="apresentacao">
-                <div id="slide-carousel" class="carousel slide carousel-fade " data-bs-ride="carousel" >
-                    <div class="carousel-inner" >
-                        <div class="carousel-item active p-5">
-                            <img class="d-block w-100" src="./imagens/estadio1.jpg ">
-                            <div class="carousel-caption d-none d-block w-100">
-                                <p class="bg-dark p-5">O futebol é o esporte mais popular do mundo e suas origens
-                                    remontam há 5
-                                    mil anos na
-                                    China. O futebol moderno
-                                    surgiu na Inglaterra durante o século XIX.O futebol é o esporte coletivo mais
-                                    popular do
-                                    planeta. Segundo
-                                    dados da Federação Internacional de Futebol (Fifa), cerca de 270 milhões de pessoas
-                                    atuam em atividades
-                                    diretamente relacionadas ao esporte (seja como jogador, seja como árbitro).</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./imagens/estadio 2.jpg">
-                            <div class="carousel-caption d-none d-block w-100">
-                                <p class="bg-dark p-5">Atualmente, grandes competições de futebol são organizadas todos
-                                    os anos
-                                    por diferentes
-                                    entidades futebolísticas (nacionais, continentais ou internacionais). E o esporte
-                                    popularizado entre as massas de trabalhadores pobres é um segmento bilionário que
-                                    movimenta muito dinheiro e move interesses políticos mundo afora.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./imagens/estadio 3.jpg">
-                            <div class="carousel-caption d-none d-block w-100">
-                                <p class="bg-dark p-5">Uma importante observação é que a Fifa considera como data
-                                    oficial do
-                                    surgimento do
-                                    futebol o ano de 1863, quando foi fundada na Inglaterra The Football Association, a
-                                    organização responsável pela gestão do futebol naquele país.</p>
-                            </div>
-                        </div>
+        <div class="container mt-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagens/estadio1.jpg" class="d-block w-100" alt="Slide 1">
                     </div>
-                    <button data-bs-target="#slide-carousel" data-bs-slide="prev" class="carousel-control-prev"
-                        type="button">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button data-bs-target="#slide-carousel" data-bs-slide="next" class="carousel-control-next"
-                        type="button">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="0"
-                            class="active"></button>
-                        <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="2"></button>
+                    <div class="carousel-item">
+                        <img src="./imagens/estadio 2.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagens/estadio 3.jpg" class="d-block w-100" alt="Slide 3">
                     </div>
                 </div>
-            </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
 
         <section id="estadios">
@@ -229,7 +200,7 @@
 </main>
 
 
-<div id="rodape" class="container-fluid">
+<div id="rodape" class="mt-5">
     <footer class="navbar-fixed-bottom text-center bg-dark py-3">
         <h3 class="text-light">&copy 2024 - Todos os direitos reservados</h3>
     </footer>
