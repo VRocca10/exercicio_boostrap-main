@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercico Bootstrap Avançado</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        section {
+            height: 100vh;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(159, 159, 226);
+            color: #fff;
+            z-index: 9;
+        }
+
+        .img-responsive {
+            width: 75%;
+            display: flex;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<header id="artigos">
+    <div class="navbar navbar-expand-lg">
+        <div class="container">
+            <h1>Estádios</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#apresentacao">Estádios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#arenas">Novas Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#difereca">Diferença de estruturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gramado">Gramados</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+<main>
+
+    <body>
+        <div class="container">
+            <section id="apresentacao">
+                <div id="slide-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="height: 50em;">
+                        <div class="carousel-item active p-5">
+                            <img class="d-block w-100" src="./imagens/estadio1.jpg ">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="bg-dark p-5">O futebol é o esporte mais popular do mundo e suas origens
+                                    remontam há 5
+                                    mil anos na
+                                    China. O futebol moderno
+                                    surgiu na Inglaterra durante o século XIX.O futebol é o esporte coletivo mais
+                                    popular do
+                                    planeta. Segundo
+                                    dados da Federação Internacional de Futebol (Fifa), cerca de 270 milhões de pessoas
+                                    atuam em atividades
+                                    diretamente relacionadas ao esporte (seja como jogador, seja como árbitro).</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./imagens/estadio 2.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="bg-dark p-5">Atualmente, grandes competições de futebol são organizadas todos
+                                    os anos
+                                    por diferentes
+                                    entidades futebolísticas (nacionais, continentais ou internacionais). E o esporte
+                                    popularizado entre as massas de trabalhadores pobres é um segmento bilionário que
+                                    movimenta muito dinheiro e move interesses políticos mundo afora.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./imagens/estadio 3.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="bg-dark p-5">Uma importante observação é que a Fifa considera como data
+                                    oficial do
+                                    surgimento do
+                                    futebol o ano de 1863, quando foi fundada na Inglaterra The Football Association, a
+                                    organização responsável pela gestão do futebol naquele país.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#slide-carousel" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#slide-carousel" data-bs-slide="next" class="carousel-control-next"
+                        type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#slide-carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="estadios">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <div class="col-sm-4">
+                        <div class="card border-secondary mb-3 h-100">
+                            <div class="card-header" id="arenas">
+                                <h2>Novas Arenas de Futebol</h2>
+                            </div>
+                            <img class="img-responsive"
+                                src="https://media-manager.noticiasaominuto.com.br/1920/1489423820/naom_58c6cb99cbae5.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Novos estádios de Futebol</h4>
+                                <p class="card-text">O Brasil construiu ou reformou doze estádios ou arenas para sediar
+                                    a
+                                    Copa do Mundo de 2014. O Governo Federal e a FIFA assumiram através das estratégias
+                                    estabelecidas para o megaevento, que tais construções deveriam seguir determinadas
+                                    normas para a acomodação dos torcedores. Torcedores que, agora, são tratados como
+                                    consumidores e, por isso, demandam segurança e conforto desses novos espaços. O
+                                    objetivo
+                                    desse artigo é analisar, através de pesquisa bibliográfica e de forma qualitativa,
+                                    como
+                                    o novo produto instalação aproxima o esporte do entretenimento. É nossa intenção
+                                    abordar, também, como esses novos estádios e arenas funcionam como elemento de
+                                    promoção
+                                    mercadológica das cidades onde estão sediados. As novas instalações esportivas
+                                    funcionam, então, como
+                                    produto do esporte voltado para o consumo do entretenimento e de promoção das
+                                    cidades
+                                    para consumo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card border-secondary mb-3 h-100">
+                            <div class="card-header" id="difereca">
+                                <h2>Diferenças de estruturas</h2>
+                            </div>
+                            <img class="img-responsive"
+                                src="https://novvalight.com.br/wp-content/uploads/2024/04/diferenca-entre-arena-e-estadio-novvalight.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Arenas ou Estadios Clássicos?</h4>
+                                <p class="card-text">Primeiro de tudo, para entender a diferença entre arena e estádio,
+                                    há
+                                    uma forma bem simples e descomplicada de dividir essas duas categorias de espaços.
+                                    Veja
+                                    a seguir.</p> </br>
+
+                                <p> é um espaço multifuncional projetado para sediar uma variedade de eventos,
+                                    incluindo competições esportivas, shows, conferências e outros tipos de
+                                    entretenimento.
+                                    Sua estrutura é versátil e adaptável, permitindo a configuração conforme as
+                                    necessidades
+                                    específicas de cada evento. </p> </br>
+                                Estádio: é um local principalmente dedicado à prática de esportes, especialmente jogos
+                                como
+                                futebol, rugby, atletismo, entre outros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card border-secondary mb-3 h-100">
+                            <div class="card-header" id="gramado">
+                                <h2>Diferença de gramados</h2>
+                            </div>
+                            <img class="img-responsive"
+                                src="https://foothub.com.br/wp-content/uploads/2023/07/image-1.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Gramados</h4>
+                                <p class="card-text">Um dos assuntos que mais movimenta discussões no futebol brasileiro
+                                    atualmente é a qualidade dos gramados. Alguns clubes, optaram pelo sintético, por
+                                    diversos motivos, como a dificuldade de manter o gramado em perfeitas condições de
+                                    jogo.
+                                    Os estádios que possuem a grama 100% sintética são Athletico Paranaense, Palmeiras e
+                                    mais recentemente, o Botafogo.</br>
+
+                                    Uma das principais razões para a escolha desses gramados é a durabilidade e a
+                                    manutenção
+                                    reduzida, diminuindo atividades como irrigação, corte e reparos. Enquanto os
+                                    gramados
+                                    naturais requerem cuidados constantes, os sintéticos exigem apenas manutenção
+                                    básica,
+                                    tornando os campos artificiais uma opção mais viável financeiramente para clubes com
+                                    orçamentos limitados, pois os custos de manutenção são reduzidos significativamente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+
+<div id="rodape" class="container-fluid">
+    <footer class="navbar-fixed-bottom text-center bg-dark py-3">
+        <h3 class="text-light">&copy 2024 - Todos os direitos reservados</h3>
+    </footer>
+</div>
+<script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
